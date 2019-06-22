@@ -1,0 +1,127 @@
+
+@import "../../app.component.scss" ;
+.home{
+    width:pxTransRem(750px);
+    height:pxTransRem(1334px);
+    background: url("../../../assets/bg.png") no-repeat;
+    background-size: 100%;
+    padding-top: pxTransRem(680px);
+    ul{
+      li{
+          width: 100%;
+          height:pxTransRem(56px);
+          margin-bottom: pxTransRem(14px);
+          span{
+              display: inline-block;
+            width:pxTransRem(104px);
+            height:pxTransRem(25px);
+            font-size:pxTransRem(26px);
+            font-family:PingFang-SC-Medium;
+            font-weight:500;
+            color:rgba(255,255,255,1);
+            margin: pxTransRem(15px) pxTransRem(19px) pxTransRem(16px) pxTransRem(52px);
+            text-align: right;
+          }
+          input{
+            width:pxTransRem(420px);
+            height:pxTransRem(56px);
+            background:rgba(238,238,238,1);
+            border-radius:pxTransRem(10px);
+            padding-left: pxTransRem(10px);
+          }
+      }  
+    }
+    .submit{
+        width:pxTransRem(300px);
+        height:pxTransRem(72px);
+        margin: pxTransRem(41px) pxTransRem(225px) 0 pxTransRem(225px);
+    }
+}
+.nowdown{
+  position: absolute;
+  top: pxTransRem(374px);
+  left: pxTransRem(115px);
+  .mask{
+    background: #000;
+    opacity: 0.3;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+  }
+  .info{
+      width: pxTransRem(520px);
+      height: pxTransRem(610px);
+      background: url("../../../assets/winbg.png") no-repeat;
+      background-size: 100%;
+      position: absolute;
+      z-index: 3;
+      padding-top: pxTransRem(188px);
+      .name-psd{
+        padding-left: pxTransRem(79px);
+        height: pxTransRem(83px) ;
+        span{
+          display: block;
+          height:pxTransRem(28px);
+          line-height: pxTransRem(28px);
+          font-size:pxTransRem(26px);
+          font-family:PingFang-SC-Medium;
+          font-weight:500;
+          color:rgba(51,51,51,1);
+          &:first-child{
+            margin-bottom: pxTransRem(27px);
+          }
+        }
+      }
+      .introduce{
+        margin-top:pxTransRem(44px); 
+        margin-bottom: pxTransRem(74px);
+        height:pxTransRem(71px);
+        p{
+          padding-left: pxTransRem(79px);
+          font-size:pxTransRem(24px);
+          font-family:PingFang-SC-Medium;
+          font-weight:500;
+          color:rgba(51,51,51,1);
+          line-height:pxTransRem(48px);
+        span{
+          display: block;
+          width:pxTransRem(12px);
+          height:pxTransRem(12px);
+          background:rgba(33,193,255,1);
+          border-radius:pxTransRem(6px);
+          position: relative;
+          top: pxTransRem(-80px);
+          right:pxTransRem(40px);
+          }
+        }
+      }
+      .btn{
+        width: pxTransRem(330px);
+        margin-left: pxTransRem(108px);
+      }
+      .name{
+        margin-top:pxTransRem(27px); 
+        p{
+          display: inline-block;
+          width: 50%;
+          height:pxTransRem(28px);
+          line-height: pxTransRem(28px);
+          font-size:pxTransRem(26px);
+          font-family:PingFang-SC-Medium;
+          font-weight:500;
+          color:rgba(51,51,51,1);
+          text-align: center;
+        }
+      }
+      .saoma{
+        img{
+          margin-left:  pxTransRem(8px);
+          width: pxTransRem(250px);
+          display: inline-block;
+        }
+      }
+  }
+}

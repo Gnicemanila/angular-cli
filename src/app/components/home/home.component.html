@@ -1,0 +1,47 @@
+
+<app-header></app-header>
+<div class="home">
+    <ul>
+      <li><span>用户账号</span> <input type="text"  [(ngModel)]="user_name" placeholder="以字母开头6-12位字母和数字!"></li>
+      <li *ngIf="RealNameStatus=='1'"><span>真实姓名</span> <input type="text"  [(ngModel)]="info_user_realName" placeholder="真实姓名" ></li>
+      <li *ngIf="PhoneStatus=='1'"><span>手机号码</span> <input type="text"  [(ngModel)]="info_user_phone" placeholder="手机号码" ></li>
+      <li><span>用户密码</span> <input type="password"  [(ngModel)]="user_psd" placeholder="6-15位字母数字混合"></li>
+      <li><span>确认密码</span> <input type="password"  [(ngModel)]="user_psd_two" placeholder="6-15位字母数字混合"></li>
+      <li><span>邀请码</span> <input type="text"    [(ngModel)]="user_invitation_code" placeholder="有邀请码请填写,没有请忽略"></li>
+      <li><span>取款密码</span> <input type="number"  [(ngModel)]="user_withdrawal_password"  placeholder="6位数字密码"></li>
+    </ul>
+    <img src="assets/bg-btn.png" alt="" (click)="submit()" class="submit">
+</div>
+<div *ngIf="nowdown">
+  <div class="nowdown">
+    <div class="mask"></div>
+    <div class="info" *ngIf="isPhone">
+      <div class="name-psd">
+          <span>游戏账号：{{user_name}}</span>
+          <span>登录密码：{{user_psd}}</span>
+      </div>
+      <div class="introduce"> 
+        <p>
+            您已成功领取18元体验金，立即下载
+            “707棋牌”APP去使用吧！
+            <span></span>
+        </p>
+      </div>
+        <img src="assets/btn.png" alt=""  (click)="godown()" class="btn"> 
+    </div>
+    <div *ngIf="!isPhone" class="info">
+        <div class="name-psd">
+            <span>游戏账号：{{user_name}}</span>
+            <span>登录密码：{{user_psd}}</span>
+        </div>
+        <div class="name">
+            <p> 安卓下载</p>
+             <p>苹果下载</p>
+         </div>
+         <div class="saoma">
+              <img src="assets/anzuo.png" alt="">
+              <img src="assets/ios.png" alt="">
+        </div>
+    </div>
+  </div>
+</div>

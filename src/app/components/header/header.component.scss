@@ -1,0 +1,20 @@
+
+@import "../../app.component.scss" ;
+.header{
+    position: fixed;
+    width:pxTransRem(750px);
+    height:pxTransRem(80px);
+    background:rgba(255,255,255,1);
+    box-shadow:0px 1px 6px 0px rgba(56,4,1,0.4);
+    .logo{
+        width:pxTransRem(160px);
+        height:pxTransRem(58px);
+        margin: pxTransRem(11px) pxTransRem(39px);
+    } 
+    .server{
+        width:pxTransRem(232px);
+        height:pxTransRem(66px);
+        float: right;
+        margin:  pxTransRem(12px) pxTransRem(48px);
+    }
+}

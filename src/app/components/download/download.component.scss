@@ -1,0 +1,13 @@
+@import "../../app.component.scss" ;
+.down-load{
+    width:pxTransRem(750px);
+    height:pxTransRem(2840px);
+    background: url("../../../assets/back.png") no-repeat;
+    background-size: 100%;
+    padding-top: pxTransRem(558px);
+    img{
+        width:pxTransRem(315px);
+        height:pxTransRem(91px);
+        margin-left:pxTransRem(218px); 
+    }
+}

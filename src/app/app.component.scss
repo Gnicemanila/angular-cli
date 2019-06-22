@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */
+    touch-action: manipulation;
+}
+ul,li,ol,p,span,button{
+    list-style: none;
+}
+@function pxTransRem($px){
+    $rem : 75px;
+    @return ($px/$rem) + rem;
+}
